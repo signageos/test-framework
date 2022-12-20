@@ -240,3 +240,16 @@ should(stoppedVideos[0].y).equal(0);
 should(stoppedVideos[0].width).equal(1920);
 should(stoppedVideos[0].height).equal(1080);
 ```
+
+## How to add more tests
+1. Add new test file to `test` folder (E.g. `test/second.spec.js`)
+1. Add the test file path to "sos.tests" in `package.json`
+	```json
+	"sos": {
+		"tests": [
+			"test/first.spec.js",
+			"test/second.spec.js"
+		]
+	}
+	```
+1. Continue with [Editing tests](#editing-tests)

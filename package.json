@@ -31,7 +31,8 @@
   },
   "sos": {
     "tests": [
-      "test/first.spec.js"
+      "test/first.spec.js",
+      "test/second.spec.js"
     ]
   }
 }
