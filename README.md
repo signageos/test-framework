@@ -1,7 +1,11 @@
 # Test Framework
 
+## Intro
+signageOS Test Framework allows you to write tests for your [Applet](https://docs.signageos.io/hc/en-us/articles/4405068855570-Introduction-to-Applets) and run those tests automatically on emulator and physical (digital signage) devices connected to [signageOS](https://box.signageos.io).
+
 ## How to start
 ### Prerequisites
+* [signageOS Account](https://box.signageos.io)
 * [Node.js](https://nodejs.org/en/) (v12)
 * [signageOS SDK](https://github.com/signageos/sdk)
 * [signageOS CLI](https://github.com/signageos/cli)
