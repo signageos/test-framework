@@ -12,22 +12,24 @@ signageOS Test Framework allows you to write tests for your [Applet](https://doc
 * You have [Multi-file Applet](https://docs.signageos.io/hc/en-us/articles/4405070294674-Hello-World-Setup-Developer-Environment) (Single-file is deprecated)
 
 ### Creating the first test
-1. Go to your Multi-file Applet project root
+1. Navigate to your Multi-file Applet project root (based on your project file structure it can be out of the root of the repository. E.g. `cd applets/first-applet`)
 1. Copy `./lib/` folder into your project root (it contains all necessary helper files)
 1. Copy the following files to the root of your project `./.mocharc.js`, `.babelrc`
 1. Add the following lines to the `package.json` file
 	```json
-	{
 	"scripts": {
 		"test": "mocha --timeout 120000",
 	},
+	```
+	> Your project probably already contains `scripts` section. Just add the `test` line to it.
+	```json
 	"sos": {
 		"tests": [
-		"test/first.spec.js"
+			"test/first.spec.js"
 		]
-	}
-	}
+	},
 	```
+	> Don't forget to remove comma after the last line of JSON. Otherwise, the JSON will be invalid.
 1. Run the following command:
 	```sh
 	npm add mocha should @signageos/sdk@latest @babel/register @babel/core @babel/preset-env --save-dev
