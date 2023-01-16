@@ -157,7 +157,7 @@ setupPlayerTiming(appletUid, appletVersion)
 ```
 Before every test case (`it`) we have to setup applet to the tested device. This function returns `timing` instance of the applet.
 We can use this instance to interact with the applet.
-
+Here is the public API Reference for the returned [`Timing`](https://signageos-documentation.s3.eu-central-1.amazonaws.com/sdk/latest/classes/timing.html) instance.
 ### Clean Applet from the tested device
 In test:
 ```js
